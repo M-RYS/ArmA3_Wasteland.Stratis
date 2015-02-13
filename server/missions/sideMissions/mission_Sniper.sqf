@@ -31,6 +31,7 @@ _setupObjects =
 	_tent = createVehicle ["CamoNet_INDP_big_F", _missionPos, [], 3, "None"];
 	_tent allowDamage false;
 	_tent setDir random 360;
+	_tent setVariable ["R3F_LOG_disabled", false];
 	
 	_missionPos = getPosASL _tent;
 	_obj = createVehicle ["I_GMG_01_high_F", _missionPos,[], 10,"None"]; 

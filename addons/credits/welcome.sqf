@@ -7,16 +7,16 @@ _onScreenTime = 5;
 
 sleep 15;
 
-_role1 = "Welcome to A3WASTELAND ZA#101 STRATIS";
+_role1 = "Welcome to A3WASTELAND ZA#100 CHERNARUS";
 _role1names = ["The #1 Wasteland server in Africa!"];
 _role2 = "Server Owner and Head Admin";
 _role2names = ["CRE4MPIE"];
 _role3 = "Server Restarts";
 _role3names = ["This server is restarted regularly to ensure optimal server performance!"]; 
-_role4 = "Join us on Teamspeak";
-_role4names = ["cptts.gameservers.com:9194"];
+_role4 = "Teamspeak";
+_role4names = ["Join us on TS at cptts.gameservers.com:9194"];
 _role5 = "Feedback";
-_role5names = ["Please report any bugs or issues on teamspeak!"];
+_role5names = ["Please report any bugs or issues!"];
 _role6 = "Object saving";
 _role6names = ["Locked Objects are saved for 7 days. This includes base-parts and crates."];
 _role7 = "Vehicle saving";

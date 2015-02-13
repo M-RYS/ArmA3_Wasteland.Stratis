@@ -62,7 +62,7 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
 		// Display confirm message
 		if ([parseText _confirmMsg, "Confirm", "SERVICE", true] call BIS_fnc_guiMessage) then
 		{	
-		
+		  sleep (1 + (random 4));
 		  _vehicle setVehicleAmmo 1;
 		  _vehicle setFuel 1;
 		  _vehicle setDamage 0;

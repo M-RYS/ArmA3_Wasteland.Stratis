@@ -38,7 +38,7 @@ if (!isDedicated) then
 	{
 		if (hasInterface) then // Normal player
 		{
-			9999 cutText ["Welcome to A3Wasteland ZA#101 Stratis, please wait. Press M and view the changelog =)", "BLACK", 0.01];
+			9999 cutText ["Welcome to A3Wasteland, please wait while your client initializes.", "BLACK", 0.01];
 
 			waitUntil {!isNull player};
 			removeAllWeapons player;

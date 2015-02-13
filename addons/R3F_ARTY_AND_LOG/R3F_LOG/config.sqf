@@ -151,7 +151,8 @@ R3F_LOG_CFG_objets_transportables =
 	["BlockConcrete_F", 5],
 	["Land_Sacks_goods_F", 25],
 	["Land_BarrelWater_F", 25],
-	["Land_Atm_01_F", 50]
+	["Land_Atm_01_F", 50],
+	["CamoNet_INDP_big_F", 5]
 
 ];
 
@@ -218,5 +219,6 @@ R3F_LOG_CFG_objets_deplacables =
 	"Land_BC_Court_F",
 	"Land_Atm_01_F",
 	"Land_Cargo20_grey_F",
-	"Land_Cargo40_grey_F"
+	"Land_Cargo40_grey_F",
+	"CamoNet_INDP_big_F"
 ];

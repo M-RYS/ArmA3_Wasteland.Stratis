@@ -26,6 +26,8 @@ _setupObjects =
 
 	_bunker = createVehicle ["CamoNet_INDP_big_F", [_missionPos select 0, _missionPos select 1], [], 0, "CAN COLLIDE"];
 	_bunker allowdamage false;
+	_bunker setDir random 360;
+	_bunker setVariable ["R3F_LOG_disabled", false];
 
 	_missionPos = getPosASL _bunker;
 

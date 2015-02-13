@@ -57,13 +57,16 @@ rifleArray = compileFinal str
 	["AK-74", "arifle_mas_aks74", 500],
 	["AKMS", "arifle_mas_akms", 800],
 	["AKSU-74", "arifle_mas_aks74u", 800],
+	["AK12", "arifle_mas_ak12_sf", 500],
+	["AK12 GL", "arifle_mas_ak12_sf_gl", 500],
 	
 	["M4A1 Carbine ", "arifle_mas_m4_d", 500],
 	["M4A1 Carbine M203 ", "arifle_mas_m4_m203_d", 650],
 	["HK416 Assault Rifle ", "arifle_mas_hk416c_d", 550],
 	["HK416 Assault Rifle M203 ", "arifle_mas_hk416_m203c_d", 700],
 	["H&K G36C", "arifle_mas_g36c", 700],
-	["M16A3", "arifle_mas_m16", 500],
+	["ARX Assault Rifle", "arifle_mas_arx", 500],
+	["ARX GL Assault Rifle", "arifle_mas_arx_gl", 500],
 		
 	["HK417 7.62mm Assault Rifle", "arifle_mas_hk417c_d", 700],
 	["HK417 7.62mm Assault Rifle M203", "arifle_mas_hk417_m203c_d", 800],
@@ -331,12 +334,22 @@ accessoriesArray = compileFinal str
 	["LRPS", "optic_LRPS", 175, "item"],
 	["SOS", "optic_SOS", 200, "item"],
 	["NVS", "optic_NVS", 500, "item"],
+	["NSPU Dual Purpose NVS", "optic_mas_nspu", 500, "item"],
 	["ACOG Red Dot (Camo)", "optic_mas_acog_rd_c", 125, "item"],
-	["Aimpoint Red Dot", "optic_mas_aim", 150, "item"],
+	["RCO (Camo)", "optic_mas_Hamr_camo", 125, "item"],
+	["ARCO (Camo)", "optic_mas_Arco_camo", 125, "item"],
+	["AK Kobra ACO(Camo)", "optic_mas_kobra_c", 125, "item"],
+	["ACO (Camo)", "optic_mas_Aco_camo", 125, "item"],
+	["ACOG (Camo)", "optic_mas_acog_c", 125, "item"],
+	["Aimpoint Red Dot (Camo)", "optic_mas_aim_c", 150, "item"],
 	["PSO Nightvision / Eotech (Camo)", "optic_mas_pso_nv_eo_c", 175, "item"],
 	["Zeiss Optic Sniper Scope (Camo)", "optic_mas_zeiss_c", 175, "item"],
 	["DMS (Camo)", "optic_mas_DMS_c", 200, "item"],
 	["PSO Sniper Scope", "optic_mas_pso", 500, "item"]
+//	["Nightstalker Thermal Scope", "optic_Nightstalker", 85000, "item"],
+//	["TWS Thermal Sniper Scope", "optic_tws", 75000, "item"],
+//	["TERM IR Thermal Assault Scope", "optic_mas_term", 65000, "item"],
+//	["Goshawk Thermal Assault Scope", "optic_mas_goshawk", 65000, "item"]
 ];
 
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
@@ -603,8 +616,8 @@ genItemArray = compileFinal str
 	["Diving Goggles", "G_Diving", 100, "gogg"],
 	["Binoculars", "Binocular", 50, "binoc"],
 	["Rangefinder", "Rangefinder", 500, "binoc"],
-	["Laser Designator", "Laserdesignator", 2500, "binoc"],
-	["Laser Batteries", "Laserbatteries", 25, "mag"],
+//	["Laser Designator", "Laserdesignator", 2500, "binoc"],
+//	["Laser Batteries", "Laserbatteries", 25, "mag"],
 	["Chemlight (Blue)", "Chemlight_blue", 25, "mag"],
 	["Chemlight (Green)", "Chemlight_green", 25, "mag"],
 	["Chemlight (Yellow)", "Chemlight_yellow", 25, "mag"],
@@ -662,6 +675,7 @@ genObjectsArray = compileFinal str
 	["Food sacks", "Land_Sacks_goods_F", 5000, "object"], // Added on player request
 	["Water Barrel", "Land_BarrelWater_F", 5000, "object"], // Added on player request
 	["Portable ATM Machine", "Land_Atm_01_F", 150000, "object"]
+//	["Large Vehicle Camo Net", "CamoNet_INDP_big_F", 2500, "object"]
 	
 ];
 
@@ -714,14 +728,14 @@ landArray = compileFinal str
 	["Zamak Fuel", "I_Truck_02_fuel_F", 7500, "vehicle"],
 	["Zamak Medical", "I_Truck_02_medical_F", 9000, "vehicle"],
 	["Zamak Repair", "I_Truck_02_box_F", 10000, "vehicle"],
-	["Zamak Ammo", "I_Truck_02_ammo_F", 25000, "vehicle"]
+	["Zamak Ammo", "I_Truck_02_ammo_F", 25000, "vehicle"],
 
-//	["UGV Stomper (NATO)", "B_UGV_01_F", 2500, "vehicle"],
-//	["UGV Stomper RCWS (NATO)", "B_UGV_01_rcws_F", 15000, "vehicle"],
-//	["UGV Stomper (AAF)", "I_UGV_01_F", 2500, "vehicle"],
-//	["UGV Stomper RCWS (AAF)", "I_UGV_01_rcws_F", 15000, "vehicle"],
-//	["UGV Saif (CSAT)", "O_UGV_01_F", 2500, "vehicle"],
-//	["UGV Saif RCWS (CSAT)", "O_UGV_01_rcws_F", 15000, "vehicle"]
+	["UGV Stomper (NATO)", "B_UGV_01_F", 2500, "vehicle"],
+	["UGV Stomper RCWS (NATO)", "B_UGV_01_rcws_F", 15000, "vehicle"],
+	["UGV Stomper (AAF)", "I_UGV_01_F", 2500, "vehicle"],
+	["UGV Stomper RCWS (AAF)", "I_UGV_01_rcws_F", 15000, "vehicle"],
+	["UGV Saif (CSAT)", "O_UGV_01_F", 2500, "vehicle"],
+	["UGV Saif RCWS (CSAT)", "O_UGV_01_rcws_F", 15000, "vehicle"]
 ];
 
 armoredArray = compileFinal str
@@ -863,12 +877,17 @@ colorsArray = compileFinal str
 			["Pink Camo", "client\images\vehicleTextures\camo_pank.jpg"],
 			["Leopard", "client\images\vehicleTextures\leopard.jpg"],
 			["Hello Kitty", "client\images\vehicleTextures\kitty.jpg"],
-			["Sierra Whiskey Wild Dogs", "client\images\vehicleTextures\SWWD.jpg"],
+			["Sierra Whiskey Wild Dogs Clan Camo", "client\images\vehicleTextures\SWWD.jpg"],
+			["BMW Clan Camo", "client\images\vehicleTextures\BMW.jpg"],
 			["Red Digi Camo", "client\images\vehicleTextures\DMR.jpg"],
 			["Ice Camo", "client\images\vehicleTextures\IceCamo.jpg"],
-			["Snakeskin Camo", "client\images\vehicleTextures\snake.jpg"]
+			["Skulls", "client\images\vehicleTextures\skulls.jpg"],
+			["Snakeskin Camo", "client\images\vehicleTextures\snake.jpg"],
+			["DMR Digital Clan Camo", "client\images\vehicleTextures\digicam.jpg"],
+			["Green Cloth Camo", "client\images\vehicleTextures\clothcamo.jpg"],
+			["Digital Hex Blue", "client\images\vehicleTextures\dcamo.jpg"]
 		]
-	],
+	],	
 	[ // Kart colors
 		"Kart_01_Base_F",
 		[
@@ -888,13 +907,12 @@ colorsArray = compileFinal str
 // ["Medical Kit", "medkits", localize "STR_WL_ShopDescriptions_MedKit", "client\icons\medkit.paa", 400, 200],  // not needed since there are First Ait Kits
 customPlayerItems = compileFinal str
 [
-	["Water Bottle", "water", localize "STR_WL_ShopDescriptions_Water", "client\icons\water.paa", 30, 15],
-	["Canned Food", "cannedfood", localize "STR_WL_ShopDescriptions_CanFood", "client\icons\cannedfood.paa", 30, 15],
+	["Redbull", "water", localize "STR_WL_ShopDescriptions_Water", "client\icons\energydrink.paa", 30, 15],
+	["Heinz Beans", "cannedfood", localize "STR_WL_ShopDescriptions_CanFood", "client\icons\cannedfood.paa", 30, 15],
 	["Repair Kit", "repairkit", localize "STR_WL_ShopDescriptions_RepairKit", "client\icons\briefcase.paa", 500, 250],
 	["Jerry Can (Full)", "jerrycanfull", localize "STR_WL_ShopDescriptions_fuelFull", "client\icons\jerrycan.paa", 150, 75],
-	["Jerry Can (Empty)", "jerrycanempty", localize "STR_WL_ShopDescriptions_fuelEmpty", "client\icons\jerrycan.paa", 50, 25],
-	["Spawn Beacon", "spawnbeacon", localize "STR_WL_ShopDescriptions_spawnBeacon", "client\icons\briefcase.paa", 9500, 750],
-	["Camo Net", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\briefcase.paa", 200, 100],
+	["Spawn Beacon", "spawnbeacon", localize "STR_WL_ShopDescriptions_spawnBeacon", "client\icons\spawnbeacon.paa", 9500, 750],
+	["Camo Net", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\camonet.paa", 2500, 100],
 	["Syphon Hose", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\jerrycan.paa", 200, 100],
 	["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\water.paa", 100, 50],
 	["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\briefcase.paa", 1000, 500]

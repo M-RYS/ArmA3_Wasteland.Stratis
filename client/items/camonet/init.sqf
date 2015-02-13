@@ -11,7 +11,7 @@ private ["_path","_ground_type", "_icon", "_unpack", "_pack"];
 _path = _this;
 
 MF_ITEMS_CAMO_NET = "camonet";
-MF_ITEMS_CAMO_NET_TYPE = "CamoNet_INDP_open_F";
+MF_ITEMS_CAMO_NET_TYPE = "CamoNet_INDP_big_F";
 _ground_type = "Land_Ground_sheet_folded_OPFOR_F";
 _icon = "client\icons\camonet.paa";
 

@@ -11,6 +11,93 @@ player createDiarySubject ["changelog", "Changelog"];
 player createDiarySubject ["credits", "Credits"];
 
 
+
+player createDiaryRecord ["changelog",
+[
+"13 February 2015",
+"
+
+<br/> [Removed] Thermals from the Gun Store
+<br/> [Removed] Thermals from the General Store
+<br/> [Changed] Whitelisting 
+"
+]];
+
+
+player createDiaryRecord ["changelog",
+[
+"11 February 2015",
+"
+
+<br/> [Added] M900 Heli to Aidrop list
+<br/> [Adjusted] Fuel and Repair Airdrop Vehicle prices
+<br/> [Fixed] Some minor back-end performance optimizations and changes
+
+"
+]];
+
+
+player createDiaryRecord ["changelog",
+[
+"10 February 2015",
+"
+
+<br/> [Updated] Rank 3 Donator Loadouts
+<br/> [Moved] Some Arma 3 buildings and NEAF ATM
+
+"
+]];
+
+
+player createDiaryRecord ["changelog",
+[
+"9 February 2015",
+"
+
+<br/> [Updated] Weapon Mod to 1.8 Server Side
+<br/> [Added] Weapon Mod 1.8 Weapons and Scopes to Gunstore
+<br/> [Added] Thermal Scopes to Gunstore
+
+"
+]];
+
+
+player createDiaryRecord ["changelog",
+[
+"8 February 2015",
+"
+
+<br/> [Updated] Added new supporters
+<br/> [Added] UGV's are back in !
+<br/> [Changed] Backend Optimizations
+
+
+"
+]];
+
+
+player createDiaryRecord ["changelog",
+[
+"6 February 2015",
+"
+
+<br/> [Changed]  Some Store locations have been adjusted.
+<br/> [Fixed] a few small coding errors 
+<br/> [Added] Digital Camo
+
+"
+]];
+
+player createDiaryRecord ["changelog",
+[
+"4 February 2015",
+"
+
+<br/> [Changed] Chernarus Port - convoys still need fixing
+"
+]];
+
+
 player createDiaryRecord ["changelog",
 [
 "3 February 2015",
