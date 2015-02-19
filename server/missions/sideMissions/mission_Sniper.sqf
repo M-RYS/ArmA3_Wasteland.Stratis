@@ -20,6 +20,10 @@ _setupVars =
 _setupObjects =
 {
 	_missionPos = markerPos _missionLocation;
+		//delete existing base parts and vehicles at location
+	_baseToDelete = nearestObjects [_missionPos, ["All"], 25];
+	{ deleteVehicle _x } forEach _baseToDelete; 
+	
 	
 	_randomBox = ["mission_Mixed","mission_General","mission_USLaunchers","mission_USSpecial","mission_Main_A3snipers"] call BIS_fnc_selectRandom;
 	_box1 = createVehicle ["Box_NATO_AmmoOrd_F", _missionPos, [], 5, "None"];
@@ -62,7 +66,7 @@ _successExec =
 	// Mission completed
 	
 	_successHintMessage = format ["The snipers are dead! Well Done!"];
-		{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1];
+	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1];
 };
 
 _this call sideMissionProcessor;

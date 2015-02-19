@@ -4,7 +4,21 @@ _uid = getPlayerUID player;
 
 
 _BMW = [
-"76561198086421593"  //littlemanPo
+"76561198086421593", //littlemanPo
+"76561198008456016", //kapt_krazy
+"76561198009224506", //tokoloshe
+"76561198065673653", //Baasdaan
+"76561198069045901", //Equinox
+"76561198086421593", //vanilla vlakvark
+"76561198166270630", //vanilla vlakvark2
+"76561198142222519", //ROOFDIER
+"76561198069595017", //heinrich
+"76561198110828549", //terminat0r
+"76561198209078408", //JasonG6
+"76561198140069821", //Rorscharch
+"76561198082233087", //Rawbush
+"76561198009224506", //tokoloshe
+"76561198063605527" //aztekslasher
 ];
 
 _DMR = [
@@ -76,15 +90,14 @@ switch (true) do {
 			removeAllWeapons _player;
 			removeVest _player;
 			removeBackpack _player;
-			_player addBackpack "B_Bergen_mcamo";
+			_player addBackpack "B_Bergen_sgg";
 			_player addVest "V_PlateCarrierIAGL_dgtl";
-			_player forceAddUniform "U_B_CombatUniform_mcam_tshirt";
-			_player addWeapon "arifle_mas_l119_m203_v_sd";
-			_player addPrimaryWeaponItem "optic_mas_Hamr_camo";
+			_player forceAddUniform "U_BG_Guerilla2_1";
+			_player addWeapon "arifle_mas_m4vlt";
+			_player addPrimaryWeaponItem "optic_Arco";
 			_player addMagazine "30Rnd_mas_556x45_Stanag";
 			_player addMagazine "30Rnd_mas_556x45_Stanag";
-			_player addMagazine "1Rnd_HE_Grenade_shell";
-			_player addMagazine "1Rnd_HE_Grenade_shell";
+			_player addItemtoBackpack "HandGrenade";
 			_player addItemtoBackpack "HandGrenade";
 			_player addWeapon "hgun_mas_glocksf_F";
 			_player addHandgunItem "muzzle_mas_snds_L";
@@ -95,7 +108,8 @@ switch (true) do {
 			_player addWeapon "Rangefinder";
 			_player addItemToBackpack "FirstAidKit";
 			_player addItemToBackpack "FirstAidKit";
-			_player addHeadgear "H_Cap_brn_SPECOPS";
+			_player addHeadgear "H_Cap_tan";
+			_player addGoggles "G_mas_wpn_wrap_mask_t";
 			_player setObjectTextureGlobal  [0, "client\images\vehicleTextures\BMW.jpg"];
 		};
 
@@ -110,8 +124,8 @@ switch (true) do {
 			_player addBackpack "B_Carryall_ocamo";
 			_player addVest "V_PlateCarrierIAGL_dgtl";
 			_player forceAddUniform "U_B_GhillieSuit";
-			_player addWeapon "arifle_mas_l119_m203_v_sd";
-			_player addPrimaryWeaponItem "optic_mas_Hamr_camo";
+			_player addWeapon "arifle_mas_hk416_gl";
+			_player addPrimaryWeaponItem "optic_mas_Holosight_camo";
 			_player addMagazine "30Rnd_mas_556x45_Stanag";
 			_player addMagazine "30Rnd_mas_556x45_Stanag";
 			_player addMagazine "1Rnd_HE_Grenade_shell";
@@ -288,7 +302,7 @@ switch (true) do {
 			_player addBackpack "B_Carryall_oli";
 			_player addVest "V_PlateCarrierIAGL_dgtl";
 			_player forceAddUniform "U_IG_leader";
-			_player addWeapon "arifle_mas_g3s_m203";
+			_player addWeapon "arifle_mas_fal_m203";
 			_player addPrimaryWeaponItem "muzzle_mas_snds_M";
 			_player addPrimaryWeaponItem "acc_mas_pointer_IR_b";
 			_player addPrimaryWeaponItem "optic_Hamr";
@@ -309,7 +323,7 @@ switch (true) do {
 			_player addItem "FirstAidKit";
 			_player addItem "FirstAidKit";
 			_player addGoggles "G_Balaclava_combat";
-			_player addHeadgear "H_Cap_blk_Raven";
+			_player addHeadgear "H_HelmetB_camo";
 			_player setObjectTextureGlobal  [0, "client\images\vehicleTextures\digicam.jpg"];   
 
 		};	

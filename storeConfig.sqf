@@ -67,6 +67,9 @@ rifleArray = compileFinal str
 	["H&K G36C", "arifle_mas_g36c", 700],
 	["ARX Assault Rifle", "arifle_mas_arx", 500],
 	["ARX GL Assault Rifle", "arifle_mas_arx_gl", 500],
+	["M4 Voltor Assault Rifle", "arifle_mas_m4vlt", 500],
+	
+	
 		
 	["HK417 7.62mm Assault Rifle", "arifle_mas_hk417c_d", 700],
 	["HK417 7.62mm Assault Rifle M203", "arifle_mas_hk417_m203c_d", 800],

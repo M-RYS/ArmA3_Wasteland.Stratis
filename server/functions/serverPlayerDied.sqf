@@ -84,4 +84,4 @@ if (vehicle _unit != _unit) then
 	};
 };
 
-if !(["G_Diving", goggles _unit] call fn_startsWith) then { removeGoggles _unit };
+ if !(["G_Diving", goggles _unit] call fn_startsWith) then {}; // { removeGoggles _unit };

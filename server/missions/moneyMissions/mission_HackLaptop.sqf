@@ -7,7 +7,7 @@
 if (!isServer) exitwith {};
 #include "moneyMissionDefines.sqf";
 
-private ["_positions", "_bunker", "_laptop", "_obj", "_randomGroup", "_vehicleName"];
+private ["_positions", "_bunker", "_laptop", "_obj", "_randomGroup", "_vehicleName","_table"];
 
 _setupVars =
 {
@@ -31,8 +31,13 @@ _setupObjects =
 
 	_missionPos = getPosASL _bunker;
 
+	_table = createVehicle ["Land_WoodenTable_small_F", _missionPos, [], 0, "CAN COLLIDE"];
+	_table setPosASL [_missionPos select 0, (_missionPos select 1) - 0.25, _missionPos select 2];
+	
 	_laptop = createVehicle ["Land_Laptop_unfolded_F", _missionPos, [], 0, "CAN COLLIDE"];
-	_laptop setPosASL [_missionPos select 0, (_missionPos select 1) - 0.25, _missionPos select 2];
+	_laptop attachTo [_table,[0,0,0.60]];
+	
+	
 
 	_obj = createVehicle ["I_GMG_01_high_F", _missionPos,[], 10,"None"]; 
 	_obj setPosASL [_missionPos select 0, (_missionPos select 1) + 2, _missionPos select 2];
@@ -51,7 +56,7 @@ _setupObjects =
 	_aiGroup setBehaviour "COMBAT";	
 	
 	_vehicleName = "Laptop";
-	_missionHintText = format ["<t color='%2'>Hackers</t> are using a laptop to hack bank accounts. Stop them before it's too late and take the money for yourself !", _vehicleName, moneyMissionColor];
+	_missionHintText = format ["<t color='%2'>Hackers</t> are using a laptop to hack your bank accounts. Hacking the laptop successfully will steal cash from each on-line players bank accounts!", _vehicleName, moneyMissionColor];
 };
 
 _waitUntilMarkerPos = nil;
@@ -69,7 +74,7 @@ _failedExec =
 	// Mission failed
 	RemoveLaptopHandler = _laptop;
 	publicVariable "RemoveLaptopHandler";
-	{ deleteVehicle _x } forEach [_bunker, _obj, _laptop];
+	{ deleteVehicle _x } forEach [_bunker, _obj, _laptop, _table];
 };
 
 _successExec =
@@ -77,9 +82,9 @@ _successExec =
 	// Mission completed
 	RemoveLaptopHandler = _laptop;
 	publicVariable "RemoveLaptopHandler";
-	{ deleteVehicle _x } forEach [_bunker, _laptop, _obj];
+	{ deleteVehicle _x } forEach [_laptop,_table ];
 
-	_successHintMessage = format ["The laptop is hacked and the smugglers are dead. Well done!"];
+	_successHintMessage = format ["The laptop is hacked. Well done!"];
 };
 
 _this call moneyMissionProcessor;

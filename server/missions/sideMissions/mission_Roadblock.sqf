@@ -20,6 +20,9 @@ _setupObjects =
 	_missionPos = markerPos _missionLocation;
 	_markerDir = markerDir _missionLocation;
 	
+	//delete existing base parts and vehicles at location
+	_baseToDelete = nearestObjects [_missionPos, ["All"], 25];
+	{ deleteVehicle _x } forEach _baseToDelete; 	
 	
 _bargate = createVehicle ["Land_BarGate_F", _missionPos, [], 0, "NONE"];
 _bargate setDir _markerDir;
@@ -55,11 +58,11 @@ _successExec =
 	// Mission completed
 	
 	_randomBox = ["mission_Mixed","mission_General","mission_USLaunchers","mission_USSpecial","mission_Main_A3snipers"] call BIS_fnc_selectRandom;
-	_box1 = createVehicle ["Box_NATO_AmmoOrd_F", _missionPos, [], 5, "None"];
+	_box1 = createVehicle ["Box_NATO_Wps_F", _missionPos, [], 5, "None"];
 	_box1 setDir random 360;
 	[_box1, _randomBox] call fn_refillbox;
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1];
-	{ deleteVehicle _x } forEach [_barGate, _bunker1, _bunker2, _obj1, _obj2];
+//	{ deleteVehicle _x } forEach [_barGate, _bunker1, _bunker2, _obj1, _obj2];
 	
 
 	_successHintMessage = format ["The roadblock has been dismantled."];

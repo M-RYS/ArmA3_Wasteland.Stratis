@@ -26,6 +26,6 @@ if(playerSide == BLUFOR) then
 	if(!((getPlayerUID player) in _BLUFOR_Whitelist)) then
 		{
 			["NotWhitelisted",false,true] call BIS_fnc_endMission;
-				sleep 5;
+				sleep 10;
 		}
 	};

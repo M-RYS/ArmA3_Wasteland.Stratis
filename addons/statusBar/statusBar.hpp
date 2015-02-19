@@ -14,11 +14,11 @@ class osefStatusBar {
 	class controls {
 		class statusBarText {
 			idc = 1000;
-			x = safezoneX + safezoneW - 1;
-			y = safezoneY + safezoneH - 0.045;
+			x = safezoneX + safezoneW - 1.25;
+			y = safezoneY + safezoneH - 0.030;
 			w = 0.92;
 			h = 0.04;
-			shadow = 0;
+			shadow = 1;
 			colorBackground[] = { 1, 0.3, 0, 0 };  // uncomment and increase 4th number to have a background
 			font = "PuristaSemibold";
 			size = 0.03;
@@ -27,7 +27,7 @@ class osefStatusBar {
 			text="Loading ...";
 			class Attributes {
 				align="left";
-				color = "#7E7E7F";
+				color = "#303030";
 			};
 		};
 	};

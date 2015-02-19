@@ -77,3 +77,4 @@ if (isServer) then
 [] execVM "addons\statusBar\statusBar.sqf";   // shows FPS and teamspeak details
 [] execVM "addons\Explosives-To-Vehicle\init.sqf"; // addon for explosives to vehicles
 [] execVM "addons\laptop\init.sqf";		 // hack Laptop mission addon
+[] execVM "addons\safezone\safezone.sqf"; //safezones

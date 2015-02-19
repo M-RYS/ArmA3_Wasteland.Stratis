@@ -5,7 +5,21 @@ _uid = getPlayerUID player;
 
 
 _BMW = [
-"76561198086421593"  //littlemanPo
+"76561198086421593", //littlemanPo
+"76561198008456016", //kapt_krazy
+"76561198009224506", //tokoloshe
+"76561198065673653", //Baasdaan
+"76561198069045901", //Equinox
+"76561198086421593", //vanilla vlakvark
+"76561198166270630", //vanilla vlakvark2
+"76561198142222519", //ROOFDIER
+"76561198069595017", //heinrich
+"76561198110828549", //terminat0r
+"76561198209078408", //JasonG6
+"76561198140069821", //Rorscharch
+"76561198082233087", //Rawbush
+"76561198009224506", //tokoloshe
+"76561198063605527" //aztekslasher
 ];
 	
 _DMR = [

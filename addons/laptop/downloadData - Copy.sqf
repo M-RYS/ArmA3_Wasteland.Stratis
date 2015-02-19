@@ -114,14 +114,14 @@ T8_fnc_ActionLaptop =
 	
 	// Give Reward to the hacker
 		_totalMoney = 0;
-		_playerSide = side player;
+		_playerSide = side group player;
 		switch (_playerSide) do {
 		
-	case BLUFOR: 
+	case WEST: 
 	{	
 		{    
 			if (isPlayer _x) then {
-			if  (side _x == BLUFOR) then {}
+			if  (side _x == WEST) then {}
 			else {
 			_bmoney = _x getVariable ["bmoney",0];
 			if ( _bmoney > 0 ) then { //might as well check for zero's
@@ -134,11 +134,11 @@ T8_fnc_ActionLaptop =
 		} forEach playableUnits;
 	}; 
 	
-	case OPFOR: 
+	case EAST: 
 	{	
 		{    
 			if (isPlayer _x) then {
-			if  (side _x == OPFOR) then {}
+			if  (side _x == EAST) then {}
 			else {
 			_bmoney = _x getVariable ["bmoney",0];
 			if ( _bmoney > 0 ) then { //might as well check for zero's
